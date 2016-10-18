@@ -18,8 +18,13 @@ RCT_EXPORT_METHOD(show:(NSDictionary *)options) {
     NSString *position = [options objectForKey:@"position"];
     NSNumber *addPixelsY = [options objectForKey:@"addPixelsY"];
     
+    if( ![message isKindOfClass:[NSString class]] ){
+        RCTLogError(@"invalid message");
+        return;
+    }
+    
     if (![position isEqual: @"top"] && ![position isEqual: @"center"] && ![position isEqual: @"bottom"]) {
-        RCTLogError(@"invalid position. valid options are 'top', 'center' and 'bottom'");
+        RCTLogError(@"invalid position %@. valid options are 'top', 'center' and 'bottom'", position);
         return;
     }
     

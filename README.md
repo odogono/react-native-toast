@@ -14,8 +14,8 @@ npm install odogono/react-native-toast --save
 ### Installation (Android)
 ```gradle
 ...
-include ':react-native-toast'
-project(':react-native-toast').projectDir = new File(settingsDir, '../node_modules/odogono/react-native-toast/android')
+include ':odgn-react-native-toast'
+project(':odgn-react-native-toast').projectDir = new File(settingsDir, '../node_modules/odgn-react-native-toast/android')
 ```
 
 * In `android/app/build.gradle`
@@ -24,7 +24,7 @@ project(':react-native-toast').projectDir = new File(settingsDir, '../node_modul
 ...
 dependencies {
     ...
-    compile project(':react-native-toast')
+    compile project(':odgn-react-native-toast')
 }
 ```
 
@@ -50,6 +50,11 @@ protected List<ReactPackage> getPackages() {
 ![ios](https://github.com/remobile/react-native-toast/blob/master/screencasts/ios.gif)
 
 ## Usage
+
+```js
+Toast.showToast(message,duration,position);
+```
+
 
 ### Example
 ```js

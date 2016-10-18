@@ -92,6 +92,8 @@ Toast.show = function (message) {
   showToast(message, "short", "bottom");
 };
 
+Toast.showToast = showToast;
+
 Toast.hide = function () {
   RCTToast.hide();
 };
