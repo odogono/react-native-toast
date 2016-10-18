@@ -3,7 +3,7 @@ A android like toast for react-native support for ios and android
 
 ## Installation
 ```sh
-npm install @remobile/react-native-toast --save
+npm install odogono/react-native-toast --save
 ```
 
 ### Installation (iOS)
@@ -15,7 +15,7 @@ npm install @remobile/react-native-toast --save
 ```gradle
 ...
 include ':react-native-toast'
-project(':react-native-toast').projectDir = new File(settingsDir, '../node_modules/@remobile/react-native-toast/android')
+project(':react-native-toast').projectDir = new File(settingsDir, '../node_modules/odogono/react-native-toast/android')
 ```
 
 * In `android/app/build.gradle`
@@ -62,7 +62,7 @@ var {
 } = ReactNative;
 
 var Toast = require('react-native-toast');
-var Button = require('@remobile/react-native-simple-button');
+var Button = require('odogono/react-native-simple-button');
 
 module.exports = React.createClass({
     render() {
