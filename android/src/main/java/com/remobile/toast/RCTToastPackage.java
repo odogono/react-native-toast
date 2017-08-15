@@ -18,7 +18,9 @@ public class RCTToastPackage implements ReactPackage {
         );
     }
 
-    @Override
+    /**
+     * note: the override was removed to remain compatible with RN0.47.1 
+     */
     public List<Class<? extends JavaScriptModule>> createJSModules() {
         return Collections.emptyList();
     }
